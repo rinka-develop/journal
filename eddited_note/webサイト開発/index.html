@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webサイト開発入門</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Webサイト開発入門</h1>
+        <p>HTML、CSS、JavaScriptの基礎を学ぼう</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#html-section">HTML</a></li>
+            <li><a href="#css-section">CSS</a></li>
+            <li><a href="#js-section">JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="html-section">
+            <h2>HTML（構造）</h2>
+            <p>HTMLはwebサイトの骨組みを作ります。見出し、段落、画像などを配置します。</p>
+            <div class="code-example">
+                <h3>HTMLの例：</h3>
+                <pre><code>&lt;h1&gt;見出し&lt;/h1&gt;
+&lt;p&gt;段落のテキスト&lt;/p&gt;
+&lt;img src="画像.jpg" alt="説明"&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="css-section">
+            <h2>CSS（デザイン）</h2>
+            <p>CSSはwebサイトの見た目を美しく整えます。色、フォント、レイアウトを制御します。</p>
+            <div class="code-example">
+                <h3>CSSの例：</h3>
+                <pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}</code></pre>
+            </div>
+            <div class="demo-box">
+                <p>このボックスはCSSでスタイリングされています</p>
+            </div>
+        </section>
+
+        <section id="js-section">
+            <h2>JavaScript（機能）</h2>
+            <p>JavaScriptはwebサイトに動的な機能を追加します。ボタンクリックやデータ処理を行います。</p>
+            <div class="code-example">
+                <h3>JavaScriptの例：</h3>
+                <pre><code>function sayHello() {
+    alert("こんにちは！");
+}</code></pre>
+            </div>
+            <div class="interactive-demo">
+                <button id="colorButton">色を変える</button>
+                <button id="countButton">カウント: <span id="counter">0</span></button>
+                <div id="colorBox" class="color-demo-box">
+                    このボックスの色が変わります
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Webサイト開発入門</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
